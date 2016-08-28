@@ -6,7 +6,7 @@ import { createStore, applyMiddleware } from 'redux'
 import { arrayOfDeffered } from '../../src/utils'
 import { take, fork, cancel, takeLatest } from '../../src/effects'
 
-test('takeLatest', assert => {
+test.only('takeLatest', assert => {
   assert.plan(1)
 
   const defs = arrayOfDeffered(4)
